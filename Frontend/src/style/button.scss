@@ -1,0 +1,34 @@
+.button {
+    border: none;
+    padding-inline: 1.5rem;
+    padding-block: 0.75rem;
+    border-radius: 1rem;
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease-in-out,
+        background-color 0.2s ease-in-out;
+
+    &.primary-button {
+        background-color: #e1034d;
+        color: white;
+
+        &:hover {
+            background-color: #bd0340;
+        }
+    }
+
+    &:focus-visible {
+        outline: 2px solid #ffffff;
+        outline-offset: 3px;
+    }
+
+    &:active {
+        transform: scale(0.97);
+    }
+
+    &:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+    }
+}
